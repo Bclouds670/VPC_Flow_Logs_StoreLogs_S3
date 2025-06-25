@@ -110,4 +110,4 @@ Enable VPC Flow Logs on a VPC to capture all network traffic (accepted and rejec
 | `iam/vpc-flow-logs-s3-policy.json` | IAM policy to allow PutObject on the S3 bucket   |
 
 ---
-
+![Image](https://github.com/user-attachments/assets/8d1af4ca-a11f-4c94-bbca-ac4ea85bc143)
