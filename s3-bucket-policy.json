@@ -1,0 +1,22 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "AllowVPCLFlowLogsToWriteToBucket",
+			"Effect": "Allow",
+			"Principal": {
+				"Service": "vpc-flow-logs.amazonaws.com"
+			},
+			"Action": "s3:PutObject",
+			"Resource": "arn:aws:s3:::vpc-flow-logs-bucket25-06/*",
+			"Condition": {
+				"StringEquals": {
+					"aws:SourceAccount": "741344115901"
+				},
+				"ArnLike": {
+					"aws:SourceArn": "arn:aws:ec2:ap-south-1:741344115901:vpc-flow-logs-bucket25-06/*"
+				}
+			}
+		}
+	]
+}
